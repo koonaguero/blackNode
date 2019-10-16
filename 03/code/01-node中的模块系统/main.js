@@ -1,0 +1,6 @@
+var fooExports = require('./foo')
+console.log(fooExports.foo)
+console.log(fooExports)
+// var a = fooExports.add()
+console.log(a)
+console.log(module.exports === exports)

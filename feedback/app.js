@@ -72,6 +72,6 @@ http.createServer(function (req,res) {
     }
     // res.end('hello')
 })
-.listen(3000, function () {
+.listen(3001, function () {
     console.log('runing...')
 })
