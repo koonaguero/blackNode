@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = []
+        for (let i = 0; i < 10; i++) {
+            // let i = 1
+            a[i] = function () {
+                console.log(i)
+            }
+        }
+        a[6]()
+        {
+            let a = 'secret';
+            let f = function () {
+                // confirm('wowowow')
+                return a;
+            }
+            let b = f()
+            console.log(b)
+        }
+        console.log(typeof Worker)
+        console.log(typeof (Worker))
+        if (typeof (Worker) === 'undefined') {
+            console.log('cc')
+        }
+        // console.log(myWorker.name)
+        // Worker.postMessage('Hello World')
+    </script>
+    <script type="text/javascript">
+        var myWorker = new Worker('myworke.js', { name: 'myWorker' })
+        // console.log(myWorker)
+        // self.name
+
+        myWorker.onmessage = function (event) {
+            console.log('Received message ' + event.data)
+        }
+
+        // myWorker.postMessage('UI')
+
+        // let i = 1
+        // var sipleCount = function () {
+        //     i++
+        //     myWorker.postMessage(i)
+        //     setTimeout(sipleCount, 1000)
+        //     if (i === 7) {
+        //         myWorker.terminate()
+        //     }
+        // }
+
+        // sipleCount()
+        let UIfun = function () {
+            
+        }
+        UIfun.prototype.init = function () {
+            console.log('init')
+        }
+        let aa = new UIfun()
+        aa.init()
+        console.log(aa)
+    </script>
+</body>
+
+</html>
